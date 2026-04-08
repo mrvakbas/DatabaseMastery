@@ -31,7 +31,7 @@ Frontend'de kargo takip sayfası ve lojistik firmaya ait tanıtım içerikleri y
 - **Timeline Görünümü:** Kargonun geçtiği durakları görsel bir zaman çizelgesiyle izleme.
 - **Dinamik İçerik:** Slider, referanslar ve hizmetler tamamen admin panelinden yönetilir.
 
-<summary><b>🔧 Admin Panel Özellikleri (Tıklayın)</b></summary>
+<summary><b>🔧 Admin Panel Özellikleri</b></summary>
 
 - **Kargo & Hareket Yönetimi:** Yeni kargo tanımlama ve "Yolda, Dağıtımda, Teslim Edildi" gibi durum güncellemeleri.
 - **Birim Bazlı Yönetim:** SSS, markalar ve projeler için CRUD işlemleri.
