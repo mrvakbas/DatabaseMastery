@@ -1,4 +1,6 @@
-## ✈️ TransportMongoDb - Kargo & Lojistik Yönetim Sistemi
+<details>
+
+<summary> <b>✈️ TransportMongoDb - Kargo & Lojistik Yönetim Sistemi</b></summary>
 
 <div align="center">
 
@@ -57,14 +59,66 @@ Frontend'de kargo takip sayfası ve lojistik firmaya ait tanıtım içerikleri y
 <img width="1600" height="1821" alt="KargoEkle" src="https://github.com/user-attachments/assets/98cff1b4-1a8a-4623-87d7-11ad29f9a22b" />
 <img width="1600" height="1466" alt="KArgoHareketleri" src="https://github.com/user-attachments/assets/608d5371-0627-496c-acc5-7c72e736d7cd" />
 <img width="1600" height="1329" alt="Marka" src="https://github.com/user-attachments/assets/2610194c-5203-4d32-a64f-ac7f29a6ee0c" />
+</details>
 
 
+<details>
+<summary><b>🍽️ Dina Restorant - Restoran & Rezervasyon Yönetim Sistemi</b></summary>
+
+Bu proje, Murat Yücedağ eğitmenliğinde Udemy platformunda yayınlanan eğitim serisinin ikinci halkası olarak geliştirilmiştir.
+
+📚 Eğitim Serisi Hakkında
+Bu kurs, 3 farklı veritabanı teknolojisini (NoSQL ve Relational) deneyimlemek üzerine kurgulanmıştır
+
+## 🚀 Projelerim
+
+| # | Proje | Veritabanı | Durum |
+| :--- | :--- | :--- | :--- |
+| 1 | 🚚 Kargo & Lojistik Yönetim Sistemi | `MongoDB` | ✅ Tamamlandı |
+| 2 | (🍽️ Restoran & Rezervasyon Yönetim Sistemi) | `PostgreSQL` | ✅ Tamamlandı |
+| 3 | (Yakında) | `MSSQL` | 🔜 Hazırlanıyor |
 
 
+## 📋 Dina Restorant Projesi Hakkında
+Dina Restorant, bir restoranın tüm dijital operasyonlarını yöneten, kullanıcıların online rezervasyon yapabildiği ve menüleri inceleyebildiği; yöneticilerin ise ürün, kategori ve müşteri taleplerini yönetebildiği full-stack bir web uygulamasıdır.
+
+Bu projede verilerin ilişkisel yapısı (Relational Database) ön plana çıkarılmış ve veritabanı yönetiminde PostgreSQL kullanılarak performanslı bir yapı hedeflenmiştir.
+
+## ✨ Öne Çıkan Özellikler
+<summary><b>🌐 Frontend Özellikleri</b></summary>
+
+- Online Rezervasyon: Kullanıcıların tarih ve saat bazlı masa/rezervasyon talebi oluşturabilmesi.
+- Dinamik Menü: Kategorize edilmiş (Ana Yemek, İçecek, Tatlı) yemek listelerinin admin panelden anlık güncellenmesi.
+- Sosyal Kanıt: Müşteri yorumları ve referansların sergilendiği dinamik alanlar.
 
 
+<summary><b>🔧 Admin Panel Özellikleri</b></summary> 
+
+- Rezervasyon Yönetimi: Gelen taleplerin listelenmesi, onaylanması veya iptal süreçleri.
+- Ürün & Kategori Kontrolü: Restoran menüsündeki ürünlerin fiyat, açıklama ve görsel bazlı CRUD işlemleri.
+- İstatistikler: PostgreSQL sorguları ile toplam kategori, en pahalı ürün gibi verilerin dashboard üzerinde gösterimi.
+- Site Ayarları: Hakkımızda, iletişim bilgileri ve sosyal medya linklerinin merkezi yönetimi.
+
+## 🛠️ Teknik Altyapı
+
+| Teknoloji | Açıklama |
+| :--- | :--- |
+| **ASP.NET Core 8** | Modern MVC mimarisi ile web framework |
+| **PostgreSQL** | İlişkisel veritabanı yönetimi ve SQL sorguları |
+| **Entity Framework Core** | Code First yaklaşımı ile veritabanı etkileşimi |
+| **Npgsql** | .NET ile PostgreSQL bağlantı sürücüsü |
+| **Bootstrap** | Şık ve responsive (mobil uyumlu) arayüz tasarımı |
 
 
+## 📷 Ekran Görüntüleri 
+<img width="1600" height="2391" alt="1menü" src="https://github.com/user-attachments/assets/b7461007-893a-49b1-b50b-84905f616de0" />
+<img width="1600" height="1846" alt="Dashboard" src="https://github.com/user-attachments/assets/323a693f-4098-4dcb-aca1-1f5f6aa70164" />
+<img width="1600" height="1141" alt="kategori" src="https://github.com/user-attachments/assets/14bac542-87da-4973-8ca4-553918bfee80" />
+<img width="1600" height="1728" alt="degerlendirme" src="https://github.com/user-attachments/assets/6ed80e60-8db7-4420-b323-967648a757be" />
+<img width="1600" height="2029" alt="istatistikler" src="https://github.com/user-attachments/assets/f6abdc03-156d-42b6-9546-08f3cab3a45a" />
+<img width="1600" height="1589" alt="ürünler" src="https://github.com/user-attachments/assets/e21f4a41-ee07-4c1d-83fe-a8a8ae634e45" />
+
+</details>
 
 
 
