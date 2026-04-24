@@ -65,6 +65,13 @@ Frontend'de kargo takip sayfası ve lojistik firmaya ait tanıtım içerikleri y
 <details>
 <summary><b>🍽️ Dina Restorant - Restoran & Rezervasyon Yönetim Sistemi</b></summary>
 
+<div align="center">
+
+  [![.NET 8](https://img.shields.io/badge/.NET-8.0-512bd4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+  [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
+</div>
+
 Bu proje, Murat Yücedağ eğitmenliğinde Udemy platformunda yayınlanan eğitim serisinin ikinci halkası olarak geliştirilmiştir.
 
 📚 Eğitim Serisi Hakkında
