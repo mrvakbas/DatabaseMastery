@@ -1,0 +1,67 @@
+﻿@using System.Linq
+@model List<Product>
+
+<section class="menu-2col-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                @{
+                    var categories = Model
+                    .Where(p => p.Status && p.Category.CategoryStatus)
+                    .GroupBy(p => p.Category)
+                    .ToList();
+                }
+
+                <ul class="our-menu">
+                    @foreach (var categoryGroup in categories)
+                    {
+                        var categoryId = categoryGroup.Key.CategoryId;
+                        var categoryName = categoryGroup.Key.CategoryName;
+
+                        <li>
+                            <h4 class="menu-title-section">
+                                <a href="#cat-@categoryId">@categoryName</a>
+                            </h4>
+
+                            <div id="cat-@categoryId" class="menu-section">
+                                <div class="menu-holder menu-2col menu-accordion">
+
+                                    @{
+                                        int i = 0;
+                                    }
+                                    @foreach (var product in categoryGroup)
+                                    {
+                                        string lastClass = (i % 2 == 1) ? "last" : "";
+
+                                        <div class="menu-post clearfix @lastClass">
+
+                                            <div class="menu-post-img">
+                                                <a href="@product.ImageUrl" class="lightbox" title="@product.ProductName">
+                                                    <img width="400" height="400" src="@product.ImageUrl" class="rounded-circle" alt="@product.ProductName" title="@product.ProductName" />
+                                                </a>
+                                            </div>
+                                            <div class="menu-post-desc">
+                                                <h4>
+                                                    <span class="menu-title">@product.ProductName</span>
+                                                    <span class="menu-dots"></span>
+                                                    <span class="menu-price">₺ @product.Price.ToString("F2")</span>
+                                                </h4>
+                                                <div class="menu-text">@product.Description</div>
+                                            </div>
+
+                                        </div>
+                                        
+                                        i++;
+                                    }
+
+                                </div>
+                            </div>
+                        </li>
+
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

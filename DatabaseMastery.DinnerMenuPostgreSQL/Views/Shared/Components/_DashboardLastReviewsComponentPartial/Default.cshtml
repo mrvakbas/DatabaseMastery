@@ -1,0 +1,50 @@
+﻿@model List<Review>
+
+<div class="col-xl-4 col-md-6">
+    <div class="dash-card h-100">
+        <div class="dash-card-header">
+            <div>
+                <div class="section-title">Son 5 Değerlendirme</div>
+                <div class="section-sub">Müşteri yorumları</div>
+            </div>
+            <a href="/Review/Index" class="view-all">Tümü <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="dash-card-body pt-0">
+
+            @foreach (var item in Model)
+            {
+                <div class="review-item">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <div class="review-avatar" style="background:var(--accent-dark);">
+                            @(item.CustomerName.Substring(0, 1).ToUpper())@(item.CustomerName.Substring(0, 1).ToUpper())
+                        </div>
+                        <div>
+                            <div class="review-name">@item.CustomerName</div>
+                            <div class="review-date">@item.CreatedAt.ToString("dd MMM yyyy")</div>
+                        </div>
+                        <div class="ms-auto review-stars">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                if (i <= item.Rating)
+                                {
+                                    <span>★</span>
+                                }
+                                else
+                                {
+                                    <span style="color:#ddd;">★</span>
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="review-text">"@item.Comment"</div>
+                </div>
+            }
+
+            @if (!Model.Any())
+            {
+                <div class="text-center py-4">Henüz bir değerlendirme yapılmamış.</div>
+            }
+
+        </div>
+    </div>
+</div>
